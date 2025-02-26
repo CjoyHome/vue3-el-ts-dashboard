@@ -3,28 +3,28 @@
     <!-- 非手机设备（窄屏）才显示 -->
     <template v-if="!isMobile">
       <!-- 搜索 -->
-      <MenuSearch />
+      <!-- <MenuSearch /> -->
 
       <!-- 全屏 -->
-      <Fullscreen />
+      <!-- <Fullscreen /> -->
 
       <!-- 布局大小 -->
-      <SizeSelect />
+      <!-- <SizeSelect /> -->
 
       <!-- 语言选择 -->
-      <LangSelect />
+      <!-- <LangSelect /> -->
 
       <!-- 消息通知 -->
-      <Notification />
+      <!-- <Notification /> -->
     </template>
 
     <!-- 用户头像（个人中心、注销登录等） -->
     <UserProfile />
 
     <!-- 设置面板 -->
-    <div v-if="defaultSettings.showSettings" @click="settingStore.settingsVisible = true">
+    <!-- <div v-if="defaultSettings.showSettings" @click="settingStore.settingsVisible = true">
       <SvgIcon icon-class="setting" />
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup lang="ts">
