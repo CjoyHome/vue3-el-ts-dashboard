@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <!-- 登录页头部 -->
-    <!-- <div class="login-header">
+    <div class="login-header">
       <div class="flex-y-center">
         <el-switch
           v-model="isDark"
@@ -12,14 +12,14 @@
         />
         <lang-select class="ml-2 cursor-pointer" />
       </div>
-    </div> -->
+    </div>
 
     <!-- 登录页内容 -->
     <div class="login-form">
       <el-form ref="loginFormRef" :model="loginFormData" :rules="loginRules">
         <div class="form-title">
           <h2>{{ defaultSettings.title }}</h2>
-          <!-- <el-dropdown style="position: absolute; right: 0">
+          <el-dropdown style="position: absolute; right: 0">
             <div class="cursor-pointer">
               <el-icon>
                 <arrow-down />
@@ -41,7 +41,7 @@
                 </el-dropdown-item>
               </el-dropdown-menu>
             </template>
-          </el-dropdown> -->
+          </el-dropdown>
         </div>
 
         <!-- 用户名 -->
@@ -84,9 +84,10 @@
         </el-tooltip>
 
         <!-- 验证码 -->
-        <!-- <el-form-item prop="captchaCode">
+        <el-form-item prop="captchaCode">
           <div class="input-wrapper">
-            <svg-icon icon-class="captcha" class="mx-2" />
+            <div class="i-svg:captcha mx-2" />
+
             <el-input
               v-model="loginFormData.captchaCode"
               auto-complete="off"
@@ -108,7 +109,7 @@
           <el-link type="primary" href="/forget-password">
             {{ $t("login.forgetPassword") }}
           </el-link>
-        </div> -->
+        </div>
 
         <!-- 登录按钮 -->
         <el-button
@@ -122,24 +123,24 @@
         </el-button>
 
         <!-- 第三方登录 -->
-        <!-- <el-divider>
+        <el-divider>
           <el-text size="small">{{ $t("login.otherLoginMethods") }}</el-text>
         </el-divider>
         <div class="third-party-login">
-          <svg-icon icon-class="wechat" class="icon" />
-          <svg-icon icon-class="qq" class="icon" />
-          <svg-icon icon-class="github" class="icon" />
-          <svg-icon icon-class="gitee" class="icon" />
-        </div> -->
+          <div class="i-svg:wechat" />
+          <div class="i-svg:qq" />
+          <div class="i-svg:github" />
+          <div class="i-svg:gitee" />
+        </div>
       </el-form>
     </div>
 
     <!-- 登录页底部 -->
     <div class="login-footer">
-      <!-- <el-text size="small">
+      <el-text size="small">
         Copyright © 2021 - 2025 youlai.tech All Rights Reserved.
         <a href="http://beian.miit.gov.cn/" target="_blank">皖ICP备20006496号-2</a>
-      </el-text> -->
+      </el-text>
     </div>
   </div>
 </template>

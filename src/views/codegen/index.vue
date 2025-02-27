@@ -354,7 +354,7 @@
                 @node-click="handleFileTreeNodeClick"
               >
                 <template #default="{ data }">
-                  <svg-icon :icon-class="getFileTreeNodeIcon(data.label)" />
+                  <div :class="`i-svg:${getFileTreeNodeIcon(data.label)}`" />
                   <span class="ml-1">{{ data.label }}</span>
                 </template>
               </el-tree>
@@ -362,7 +362,7 @@
           </el-col>
           <el-col :span="18">
             <el-scrollbar max-height="72vh">
-              <div class="absolute-rt z-36 right-5 top-2">
+              <div class="absolute z-36 right-5 top-2">
                 <el-link type="primary" @click="handleCopyCode">
                   <el-icon>
                     <CopyDocument />
@@ -437,7 +437,7 @@ interface TreeNode {
 }
 const treeData = ref<TreeNode[]>([]);
 
-const queryFormRef = ref(ElForm);
+const queryFormRef = ref();
 const queryParams = reactive<TablePageQuery>({
   pageNum: 1,
   pageSize: 10,
@@ -535,7 +535,6 @@ const initSort = () => {
     ghostClass: "sortable-ghost", //拖拽样式
     handle: ".sortable-handle", //拖拽区域
     easing: "cubic-bezier(1, 0, 0, 1)",
-    onStart: (item: any) => {},
 
     // 结束拖动事件
     onEnd: (item: any) => {

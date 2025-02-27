@@ -149,10 +149,17 @@ function resolvePath(routePath: string) {
 
     & > span {
       display: inline-block;
+<<<<<<< HEAD
       width: 0;
       height: 0;
       overflow: hidden;
       visibility: hidden;
+=======
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+>>>>>>> upstream/master
     }
   }
 
@@ -178,16 +185,36 @@ function resolvePath(routePath: string) {
     .el-sub-menu {
       & > .el-sub-menu__title > span {
         display: inline-block;
+<<<<<<< HEAD
         width: 0;
         height: 0;
         overflow: hidden;
         visibility: hidden;
+=======
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+>>>>>>> upstream/master
       }
     }
   }
 }
 
+<<<<<<< HEAD
 .el-menu-item:hover {
   background-color: $menu-hover;
+=======
+html.dark {
+  .el-menu-item:hover {
+    background-color: $menu-hover;
+  }
+}
+
+html.sidebar-color-blue {
+  .el-menu-item:hover {
+    background-color: $menu-hover;
+  }
+>>>>>>> upstream/master
 }
 </style>

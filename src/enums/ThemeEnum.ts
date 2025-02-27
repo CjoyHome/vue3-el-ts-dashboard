@@ -16,3 +16,17 @@ export const enum ThemeEnum {
    */
   AUTO = "auto",
 }
+
+/**
+ * 侧边栏配色方案枚举
+ */
+export const enum SidebarColorEnum {
+  /**
+   * 经典蓝
+   */
+  CLASSIC_BLUE = "classic-blue",
+  /**
+   * 极简白
+   */
+  MINIMAL_WHITE = "minimal-white",
+}

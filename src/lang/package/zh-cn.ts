@@ -57,6 +57,9 @@ export default {
     themeColor: "主题颜色",
     tagsView: "开启 Tags-View",
     sidebarLogo: "侧边栏 Logo",
+    sidebarColorScheme: "侧边栏配色",
     watermark: "开启水印",
+    classicBlue: "经典蓝",
+    minimalWhite: "极简白",
   },
 };

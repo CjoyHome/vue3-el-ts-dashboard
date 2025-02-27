@@ -249,9 +249,14 @@ defineOptions({
   name: "User",
   inheritAttrs: false,
 });
+<<<<<<< HEAD
 
 const queryFormRef = ref(ElForm);
 const userFormRef = ref(ElForm);
+=======
+const queryFormRef = ref();
+const userFormRef = ref();
+>>>>>>> upstream/master
 
 const queryParams = reactive<UserPageQuery>({
   pageNum: 1,
